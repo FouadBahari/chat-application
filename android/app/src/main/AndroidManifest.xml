@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.etechviral.self_host_group_chat_app">
+    package="com.fouadbahari.chatify">
    <application
         android:label="self_host_group_chat_app"
         android:icon="@mipmap/ic_launcher">

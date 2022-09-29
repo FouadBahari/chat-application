@@ -10,14 +10,16 @@ import 'features/presentation/cubit/auth/auth_cubit.dart';
 import 'features/presentation/cubit/credential/credential_cubit.dart';
 import 'features/presentation/cubit/group/group_cubit.dart';
 import 'features/presentation/pages/home_page.dart';
+import 'firebase_options.dart';
 import 'on_generate_route.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'injection_container.dart' as di;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  await di.init();
+await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);  await di.init();
   runApp(MyApp());
 }
 

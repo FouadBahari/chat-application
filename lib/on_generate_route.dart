@@ -26,7 +26,6 @@ class OnGenerateRoute {
               widget: ErrorPage(),
             );
           }
-          break;
         }
         case PageConst.singleChatPage:
         {
@@ -39,35 +38,30 @@ class OnGenerateRoute {
               widget: ErrorPage(),
             );
           }
-          break;
         }
         case PageConst.loginPage:
         {
           return materialBuilder(
             widget: LoginPage(),
           );
-          break;
         }
       case PageConst.forgotPage:
         {
           return materialBuilder(
             widget: ForgetPassPage(),
           );
-          break;
         }
       case PageConst.loginPage:
         {
           return materialBuilder(
             widget: LoginPage(),
           );
-          break;
         }
         case PageConst.registrationPage:
         {
           return materialBuilder(
             widget: RegistrationPage(),
           );
-          break;
         }      case PageConst.phoneRegistrationPage:
       default:
         return materialBuilder(

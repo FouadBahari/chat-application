@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import 'package:self_host_group_chat_app/features/presentation/widgets/theme/style.dart';
 
 typedef TabClickListener=Function(int index);

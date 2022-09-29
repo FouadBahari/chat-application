@@ -1,4 +1,4 @@
-package com.etechviral.self_host_group_chat_app
+package com.fouadbahari.chatify
 
 import io.flutter.embedding.android.FlutterActivity
 

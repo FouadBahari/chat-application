@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "589719468704",
-    "project_id": "gwtech-ed822",
-    "storage_bucket": "gwtech-ed822.appspot.com"
+    "project_number": "999932219761",
+    "project_id": "chatify-dea97",
+    "storage_bucket": "chatify-dea97.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:589719468704:android:5d122b69087d6a3f2827c5",
+        "mobilesdk_app_id": "1:999932219761:android:a6c2d0a04c1272adb426d0",
         "android_client_info": {
-          "package_name": "com.etechviral.self_host_group_chat_app"
+          "package_name": "com.fouadbahari.chatify"
         }
       },
       "oauth_client": [
         {
-          "client_id": "589719468704-j1vbh1tfnivohbo6g93lilufdsmuf5fh.apps.googleusercontent.com",
+          "client_id": "999932219761-83j48igpukpbkgj3adc3br7vk0klq4gb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAIhtZXq2Z09DIiIoR-e43SfG_6aF_cIzA"
+          "current_key": "AIzaSyCogROmg87BgTTNdF4c3NhoMkMv6W0YObk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "589719468704-j1vbh1tfnivohbo6g93lilufdsmuf5fh.apps.googleusercontent.com",
+              "client_id": "999932219761-83j48igpukpbkgj3adc3br7vk0klq4gb.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "999932219761-h6lpmu76p36d4hhf24v30v01hpdvpcit.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.etechviral.selfHostGroupChatApp"
+              }
             }
           ]
         }

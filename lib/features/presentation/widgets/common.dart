@@ -1,11 +1,5 @@
-
-
-
-
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
 
 Widget loadingIndicatorProgressBar({String? data}) {
   return Center(
@@ -20,7 +14,7 @@ Widget loadingIndicatorProgressBar({String? data}) {
           height: 10,
         ),
         Text(
-          data==null?"Setting up your account please wait..":data,
+          data == null ? "Setting up your account please wait.." : data,
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
         )
       ],
@@ -29,36 +23,33 @@ Widget loadingIndicatorProgressBar({String? data}) {
 }
 
 void snackBarNetwork({String? msg, GlobalKey<ScaffoldState>? scaffoldState}) {
-  scaffoldState!.currentState!.showSnackBar(
+  ScaffoldMessenger.of(scaffoldState!.currentContext!).showSnackBar(
     SnackBar(
       backgroundColor: Colors.red,
       duration: Duration(seconds: 3),
       content: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text("$msg"),
-          Icon(FontAwesome.exclamation_triangle)
-        ],
+        children: [Text("$msg"), Icon(Icons.warning)],
       ),
     ),
   );
 }
 
-
-void snackBar({required String msg, required GlobalKey<ScaffoldState> scaffoldState}) {
-  scaffoldState.currentState!.showSnackBar(
-    SnackBar(
-      content: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(msg,style: TextStyle(fontWeight: FontWeight.w500),),
-          CircularProgressIndicator(),
-        ],
-      ),
+void snackBar(
+    {required String msg, required GlobalKey<ScaffoldState> scaffoldState}) {
+  ScaffoldMessenger.of(scaffoldState.currentContext!).showSnackBar(SnackBar(
+    content: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          msg,
+          style: TextStyle(fontWeight: FontWeight.w500),
+        ),
+        CircularProgressIndicator(),
+      ],
     ),
-  );
+  ));
 }
-
 
 void push({required BuildContext context, required Widget widget}) {
   Navigator.push(context, MaterialPageRoute(builder: (_) => widget));
@@ -75,15 +66,11 @@ void toast(String message) {
       fontSize: 16.0);
 }
 
-
-//TODO:common button [Today,this week,this month]
-Widget verticalDivider(){
+Widget verticalDivider() {
   return Container(
     margin: EdgeInsets.symmetric(horizontal: 4),
-    height:18,
+    height: 18,
     width: 1.0,
-    decoration: BoxDecoration(
-        color: Colors.black.withOpacity(.4)
-    ),
+    decoration: BoxDecoration(color: Colors.black.withOpacity(.4)),
   );
 }

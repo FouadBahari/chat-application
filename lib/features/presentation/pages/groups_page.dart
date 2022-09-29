@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import 'package:self_host_group_chat_app/features/data/remote/models/user_model.dart';
 import 'package:self_host_group_chat_app/features/domain/entities/group_entity.dart';
 import 'package:self_host_group_chat_app/features/domain/entities/single_chat_entity.dart';

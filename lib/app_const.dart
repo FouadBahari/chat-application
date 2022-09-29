@@ -1,5 +1,5 @@
 
 
 class AppConst{
-  static const String appName="SelfHostGroupChat";
+  static const String appName="Chatify";
 }
